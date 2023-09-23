@@ -1,11 +1,11 @@
 ﻿// Есть два числа, выяснить является одно число квадратом другого
 
-Console.Write("Enter 1st numb1 = ");
-int numb1 = int.Parse(Console.ReadLine());
-Console.Write("Enter 2nd numb2 = ");
-int numb2 = int.Parse(Console.ReadLine());
+Console.Write("Enter a = ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("Enter b = ");
+int b = int.Parse(Console.ReadLine());
 
-if(numb1 == numb2 * numb2 || numb2 == numb1 * numb1)
+if(a == b * b || b == a * a)
 {
     Console.WriteLine("true");
 }
