@@ -52,5 +52,4 @@ string myArrayString = string.Join(", ", myArray);  // int[]  ->  string (мас
 Console.WriteLine(myArrayString);
 int sumPositive = SumPositiveNumbers(myArray);
 int sumNegative = SumNegativeNumbers(myArray);
-
 Console.WriteLine($"Сумма положительных элементов массива равна {sumPositive} и отрицательных равна {sumNegative}");
