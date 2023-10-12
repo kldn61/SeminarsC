@@ -1,30 +1,28 @@
-﻿// Задача 34. Задайте массив заполненный случайными положительными трёхзначными числами Напишите программу,
-// которая покажет количество чётных чисел в массиве
+﻿// Задача 34. Задайте массив заполненный случайными положительными трёхзначными числами.
+// Напишите программу, которая покажет количество чётных чисел в массиве
 
-int[] CountEvenElements(int size)
+int CountEvenElements(int[] array)
 {
-    int[] array = new int[size];
+    
     int sum = 0;
     for(int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(100, 1000);
         if (array[i] % 2 == 0)
         {
-            sum += 1;
+            sum++;
         }
     }
-    return array;
+    return sum;
 }
 
 void PrintArray(int[] array)
 {
-    Console.Write("\t ");
-    for(int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
-    Console.Write("\t ");
-    Console.WriteLine();
+    Console.WriteLine($"{string.Join("\t", array)}\t");
 }
 
+
+int[] array = new int[] { 100, 102, 105, 166, 283, 764, 300, 499, 133 };
+Console.WriteLine("Массив: ");
 PrintArray(array);
+int evenCount = CountEvenElements(array);
+Console.WriteLine($"Количество четных элементов: {evenCount}");
