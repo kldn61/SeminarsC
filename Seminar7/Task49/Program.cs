@@ -81,7 +81,7 @@ void NewMatrix(int[,] arr)
 		{
 			if(i % 2 != 0 && j % 2 != 0)
 			{
-				arr[i, j] = arr[i, j] * arr[i, j];
+				arr[i, j] *= arr[i, j];
 			}	
 		}
 	}
